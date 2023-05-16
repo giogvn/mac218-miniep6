@@ -1,0 +1,4 @@
+docker build -t http_server .
+docker run -d --name http_server -p 8080:80 http_server
+docker stop http_server
+docker run -d -p 8080:80 -v "C:\Users\Giovani Andrade\Documents\usp\mac218\miniep6\index.html:/usr/src/pages/index.html" http_server
